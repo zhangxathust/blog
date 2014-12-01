@@ -97,18 +97,18 @@
 <p> 3).windows下安装<br>     search ‘msysgit’ and install</p>
 <p> 安装好git之后，配置github账户</p>
 <p> 1).申请github账户，免费账户只能create public repository，数量不限；交钱的账户可以建立private repository.</p>
-<p> 2).使自己的电脑能够通过git协议来pull\push自己的repository，<br>     即配置SSH keys，这个keys通过命令行产生（ssh-keygen -t rsa -C “XXX@company.com”）<br>     生成的ssh keys存放在用户的根目录下的.ssh文件夹下(这个文件夹是隐藏的)<br>     mac用户和Linux用户输入一下命令</p>
+<p> 2).使自己的电脑能够通过git协议来pull\push自己的repository，<br>     即配置SSH keys，这个keys通过命令行产生（ssh-keygen -t rsa -C “XXX@company.com”）<br>     生成的ssh keys存放在用户的根目录下的.ssh文件夹下(这个文件夹是隐藏的)<br>     mac用户和Linux用户输入以下命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span></div><div class="line">$ ls -alt</div></pre></td></tr></table></figure>
 
-<pre><code>windons用户通过explorer查看c:/users/administrator/
-
-添加ssh keys到personal setting，即将id_rsa.<span class="keyword">pub</span>中的内容
-</code></pre><p>2.安装node</p>
-<pre><code><span class="comment">//TODO</span>
-</code></pre><p>3.安装Hexo</p>
+<p>windons用户通过explorer查看c:/users/administrator/</p>
+<p>添加ssh keys到personal setting，即将id_rsa.pub中的内容</p>
+<p>2.安装node</p>
+<p>访问官网<a href="http://nodejs.org/" target="_blank" rel="external">nodejs官网</a><br>windows用户：<br>Linux用户：<br>只说下mac用户：<br>1) 下载pkg文件，点击安装，这样安装各种文件散落在不同的文件夹下，不好管理；<br>2) 下载binary文件，解压缩，环境变量设置(自行google mac如何设置环境变量)这样可以对node的所有相关文件进行管理；</p>
+<p>3.安装Hexo</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install Hexo -g</div></pre></td></tr></table></figure>
 
-<h3 id="域名问题（发动思维吧，花点小钱去注册一个以后会被收购的域名，哈哈，）">域名问题（发动思维吧，花点小钱去注册一个以后会被收购的域名，哈哈，）</h3>
+<p>安装过程很简单，使用node的npm命令进行安装。安装完之后就可以happy的使用Hexo进行博客管理了<br><a href="http://hexo.io/docs/index.html" target="_blank" rel="external">see more</a></p>
+<h3 id="想拥有一个独特的自己的域名吗？（发动思维区去想吧，说不定哪天就被哪位大卡给收购了！！！）">想拥有一个独特的自己的域名吗？（发动思维区去想吧，说不定哪天就被哪位大卡给收购了！！！）</h3>
 <p>如果想拥有一个像www.baidu.com这样的访问链接，就需要用户去注册一个自己喜欢的域名。</p>
 <p>1).这里有一个可以直接注册域名的网站：<a href="https://domains.dnspod.cn/" target="_blank" rel="external">https://domains.dnspod.cn/</a></p>
 <p>2).域名解析，也是将域名解析的服务挂在这个网站上</p>
