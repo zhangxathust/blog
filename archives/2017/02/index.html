@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014/12 | zhangxathust博客</title>
+  <title>Archives: 2017/2 | zhangxathust博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="zhangxathust.github.io">
 <meta property="og:type" content="website">
 <meta property="og:title" content="zhangxathust博客">
-<meta property="og:url" content="http://zhangxathust.github.io/blog/archives/2014/12/">
+<meta property="og:url" content="http://zhangxathust.github.io/blog/archives/2017/02/">
 <meta property="og:site_name" content="zhangxathust博客">
 <meta property="og:description" content="zhangxathust.github.io">
 <meta name="twitter:card" content="summary">
@@ -73,67 +73,49 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-howto" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-charles4-0-2-mac破解" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/blog/2014/12/01/howto/" class="article-date">
-  <time datetime="2014-12-01T01:57:32.000Z" itemprop="datePublished">12月 1 2014</time>
+    <a href="/blog/2017/02/26/charles4-0-2-mac破解/" class="article-date">
+  <time datetime="2017-02-26T03:57:55.000Z" itemprop="datePublished">2月 26 2017</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2014/12/01/howto/">如何使用Hexo和GitHub来新建博客</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="使用github搭建博客有很多好处：">使用github搭建博客有很多好处：</h3>
-<p>1.简洁，不用自己管理数据库，申请域名等<br>2.支持HTML、markdown语法<br>3.只需要管理博客内容</p>
-<h3 id="基于node的Hexo搭建github博客步骤">基于node的Hexo搭建github博客步骤</h3>
-<p>1.安装git<br> 1).mac下安装</p>
-<p> 2).Linux下安装（推荐软件源安装方式，省事省时；当然如果可以也可以源码安装，目录统一，方便卸载）<br>     RedHat、CentOS下安装：yum install git(貌似是这个命令)<br>     Ubuntu等的安装：apt-get install softname1 softname2(貌似是这个命令)</p>
-<p> 3).windows下安装<br>     search ‘msysgit’ and install</p>
-<p> 安装好git之后，配置github账户</p>
-<p> 1).申请github账户，免费账户只能create public repository，数量不限；交钱的账户可以建立private repository.</p>
-<p> 2).使自己的电脑能够通过git协议来pull\push自己的repository，<br>     即配置SSH keys，这个keys通过命令行产生（ssh-keygen -t rsa -C “XXX@company.com”）<br>     生成的ssh keys存放在用户的根目录下的.ssh文件夹下(这个文件夹是隐藏的)<br>     mac用户和Linux用户输入以下命令</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span></div><div class="line">$ ls -alt</div></pre></td></tr></table></figure>
-
-<p>windons用户通过explorer查看c:/users/administrator/</p>
-<p>添加ssh keys到personal setting，即将id_rsa.pub中的内容</p>
-<p>2.安装node</p>
-<p>访问官网<a href="http://nodejs.org/" target="_blank" rel="external">nodejs官网</a><br>windows用户：<br>Linux用户：<br>只说下mac用户：<br>1) 下载pkg文件，点击安装，这样安装各种文件散落在不同的文件夹下，不好管理；<br>2) 下载binary文件，解压缩，环境变量设置(自行google mac如何设置环境变量)这样可以对node的所有相关文件进行管理；</p>
-<p>3.安装Hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install Hexo -g</div></pre></td></tr></table></figure>
-
-<p>安装过程很简单，使用node的npm命令进行安装。安装完之后就可以happy的使用Hexo进行博客管理了<br><a href="http://hexo.io/docs/index.html" target="_blank" rel="external">see more</a></p>
-<h3 id="想拥有一个独特的自己的域名吗？（发动思维区去想吧，说不定哪天就被哪位大卡给收购了！！！）">想拥有一个独特的自己的域名吗？（发动思维区去想吧，说不定哪天就被哪位大卡给收购了！！！）</h3>
-<p>如果想拥有一个像www.baidu.com这样的访问链接，就需要用户去注册一个自己喜欢的域名。</p>
-<p>1).注册域名，dnspod上提供注册域名：<a href="https://domains.dnspod.cn/" target="_blank" rel="external">https://domains.dnspod.cn/</a></p>
-<p>2).域名解析，dnspod提供免费的域名解析</p>
-<p>3).将自己的github博客指向这个域名，第一修改_config.yml中的url属性到自己的域名上，其次在source目录下添加CNAME文件，内容为自己注册的域名.</p>
-<h3 id="Hexo博客管理">Hexo博客管理</h3>
-<p>More info: <a href="http://www.google.com" target="_blank" rel="external">please google and baidu</a></p>
+        <p>title: charles4.0.2 mac破解<br>date: 2017-02-26 11:50:52</p>
+<h2 id="tags:charles_4-0-2_osx">tags:charles 4.0.2 osx</h2>
+<h3 id="最近在学习网络HTTP、TCP相关的东西，抓包工具charles破解方式记录如下：">最近在学习网络HTTP、TCP相关的东西，抓包工具charles破解方式记录如下：</h3>
+<ol>
+<li>方式1（如果不可以激活的话，请用方式2）<br> 账户：WaitsUn.com<br> 密码：vapg-fold-dreg-inky</li>
+<li>方式2<br>先安装Charles，然后在终端中执行下面的命令即可实现破解。<br><code>charles=/Applications/Charles.app/Contents/Java/charles.jar
+dir=charleshack
+mkdir $dir
+cd $dir
+cat &gt;&gt; License.java &lt;&lt;EOF
+package com.xk72.charles;
+public final class License {
+ public static boolean a() { return true; }
+ public static String b() { return &quot;http://www.gfzj.us&quot;; }
+ public static String a(String name, String key) { return null; }
+}
+EOF
+javac -encoding UTF-8 License.java -d .&amp;&amp; jar -uvf $charles com/xk72/charles/License.class
+cd .. &amp;&amp; rm -rf $dir</code></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://zhangxathust.github.io/2014/12/01/howto/" data-id="1bsbh6w5c6ppehq4" class="article-share-link" data-share="baidu">分享到</a>
+        <a data-url="http://zhangxathust.github.io/2017/02/26/charles4-0-2-mac破解/" data-id="z8ke3ewnvhpya578" class="article-share-link" data-share="baidu">分享到</a>
       
 
       
 
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/Blog-GitHub-Hexo/">Blog GitHub Hexo</a></li></ul>
-
     </footer>
   </div>
   
